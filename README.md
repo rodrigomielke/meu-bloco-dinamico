@@ -14,13 +14,25 @@ Um plugin WordPress que adiciona um bloco dinâmico ao editor Gutenberg para exi
 
 ```
 meu-bloco-dinamico/
-├── meu-bloco-dinamico.php      # Arquivo principal do plugin
-├── package.json                # Configuração do npm/scripts
-├── src/
+├── assets/                     # Imagens e recursos estáticos
+│   └── bloco-dinamico.JPG
+├── build/                      # Arquivos gerados pelo build (não versionar)
+│   ├── block.json
+│   ├── index.asset.php
+│   ├── index.css
+│   ├── index.js
+│   └── style-index.css
+├── node_modules/               # Dependências do npm (não versionar)
+├── src/                        # Código-fonte do bloco
 │   ├── block.json              # Definições do bloco Gutenberg
 │   ├── editor.scss             # Estilos do editor
 │   ├── index.js                # Lógica do bloco (React)
 │   └── style.scss              # Estilos do frontend
+├── .gitignore                  # Arquivos/pastas ignorados pelo git
+├── exercicio-bloco-dinamico-wordpress.md # Exercício/guia
+├── meu-bloco-dinamico.php      # Arquivo principal do plugin
+├── package.json                # Configuração do npm/scripts
+├── package-lock.json           # Lockfile do npm
 └── README.md                   # Documentação do projeto
 ```
 
@@ -43,5 +55,10 @@ meu-bloco-dinamico/
 2. Adicione o bloco à sua página ou post.
 3. Use a barra lateral para personalizar quantidade, layout, cores e exibição de informações.
 4. Visualize o resultado no editor e no frontend.
+
+## Exemplo Visual
+
+![Preview do bloco](assets/bloco-dinamico.JPG)
+
 
 
