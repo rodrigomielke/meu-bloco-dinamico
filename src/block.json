@@ -1,0 +1,60 @@
+{
+  "apiVersion": 3,
+  "name": "meu-bloco/ultimos-posts",
+  "title": "Últimos Posts",
+  "category": "widgets",
+  "icon": "list-view",
+  "description": "Exibe os posts mais recentes do blog",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "quantidade": {
+      "type": "number",
+      "default": 3
+    },
+    "exibirData": {
+      "type": "boolean",
+      "default": true
+    },
+    "exibirExcerpt": {
+      "type": "boolean",
+      "default": true
+    },
+    "categoriaId": {
+      "type": "number",
+      "default": 0
+    },
+    "exibirImagem": {
+      "type": "boolean",
+      "default": true
+    },
+    "layoutGrid": {
+      "type": "boolean",
+      "default": false
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#f8fafc"
+    },
+    "titleColor": {
+      "type": "string",
+      "default": "#2563eb"
+    },
+    "excerptColor": {
+      "type": "string",
+      "default": "#334155"
+    },
+    "dateColor": {
+      "type": "string",
+      "default": "#64748b"
+    },
+    "cardBackgroundColor": {
+      "type": "string",
+      "default": "#fff"
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

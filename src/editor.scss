@@ -1,0 +1,55 @@
+// Variáveis para cores e espaçamentos do editor
+$ed-bg: #f9f9f9;
+$ed-bg-hover: #f1f1f1;
+$ed-border: #ddd;
+$ed-border-item: #eee;
+$ed-radius: 5px;
+$ed-radius-item: 3px;
+$ed-link: #007cba;
+$ed-data: #666;
+$ed-excerpt: #333;
+
+.mbd-ultimos-posts {
+    padding: 20px;
+    border: 1px solid $ed-border;
+    border-radius: $ed-radius;
+    background-color: $ed-bg;
+}
+
+.mbd-lista {
+    list-style: none;
+    padding: 0;
+}
+
+.mbd-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid $ed-border-item;
+    border-radius: $ed-radius-item;
+    transition: background-color 0.3s;
+    &:hover {
+        background-color: $ed-bg-hover;
+    }
+}
+
+.mbd-link {
+    font-size: 1.2em;
+    color: $ed-link;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.mbd-data {
+    display: block;
+    font-size: 0.9em;
+    color: $ed-data;
+    margin-top: 5px;
+}
+
+.mbd-excerpt {
+    font-size: 0.9em;
+    color: $ed-excerpt;
+    margin-top: 5px;
+}

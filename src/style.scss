@@ -1,0 +1,98 @@
+// Variáveis para cores e espaçamentos
+$mbd-bg: #fff;
+$mbd-bg-gradient: linear-gradient(135deg, #f8fafc 60%, #e3eafc 100%);
+$mbd-border: #e5e7eb;
+$mbd-border-hover: #60a5fa;
+$mbd-shadow: 0 1px 4px rgba(0,0,0,0.03);
+$mbd-shadow-hover: 0 4px 16px rgba(0,0,0,0.07);
+$mbd-radius: 8px;
+$mbd-radius-lg: 12px;
+$mbd-title: #2563eb;
+$mbd-title-hover: #1d4ed8;
+$mbd-numero: #60a5fa;
+$mbd-data: #64748b;
+$mbd-excerpt: #334155;
+
+.mbd-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.mbd-grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 220px;
+    margin-bottom: 0;
+}
+.mbd-ultimos-posts {
+    padding: 24px 28px;
+    background: $mbd-bg-gradient;
+    border: 1px solid #dbeafe;
+    border-radius: $mbd-radius-lg;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    margin-bottom: 32px;
+    max-width: 600px;
+}
+
+.mbd-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mbd-item {
+    margin-bottom: 18px;
+    padding: 16px 12px;
+    border: 1px solid $mbd-border;
+    border-radius: $mbd-radius;
+    background: $mbd-bg;
+    box-shadow: $mbd-shadow;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+    transition: box-shadow 0.3s, border-color 0.3s;
+    .mbd-numero {
+        min-width: 28px;
+        text-align: right;
+        color: $mbd-numero;
+        font-weight: 700;
+        font-size: 1.1em;
+        margin-top: 2px;
+    }
+}
+
+.mbd-item:hover {
+    box-shadow: $mbd-shadow-hover;
+    border-color: $mbd-border-hover;
+}
+
+.mbd-link {
+    font-size: 1.15em;
+    color: $mbd-title;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    transition: color 0.2s;
+}
+
+.mbd-link:hover {
+    color: $mbd-title-hover;
+    text-decoration: underline;
+}
+
+.mbd-data {
+    font-size: 0.85em;
+    color: $mbd-data;
+    margin-top: 2px;
+    align-self: flex-end;
+}
+
+.mbd-excerpt {
+    font-size: 0.98em;
+    color: $mbd-excerpt;
+    margin-top: 4px;
+    line-height: 1.5;
+}
